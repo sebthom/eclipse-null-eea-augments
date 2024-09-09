@@ -1,0 +1,11 @@
+class org/eclipse/jetty/client/Connection
+
+getLocalSocketAddress
+ ()Ljava/net/SocketAddress;
+ ()Ljava/net/SocketAddress;
+getRemoteSocketAddress
+ ()Ljava/net/SocketAddress;
+ ()Ljava/net/SocketAddress;
+send
+ (Lorg/eclipse/jetty/client/Request;Lorg/eclipse/jetty/client/Response$CompleteListener;)V
+ (Lorg/eclipse/jetty/client/Request;Lorg/eclipse/jetty/client/Response$CompleteListener;)V
