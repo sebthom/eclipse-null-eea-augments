@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.lastnpe.eea</groupId>
+  <artifactId>junit-5-eea</artifactId>
+  <versioning>
+    <lastUpdated>20241001112454</lastUpdated>
+    <snapshot>
+      <timestamp>20241001.112454</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>3.0.0-20241001.112454-1</value>
+        <updated>20241001112454</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>3.0.0-20241001.112454-1</value>
+        <updated>20241001112454</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+  <version>3.0.0-SNAPSHOT</version>
+</metadata>
