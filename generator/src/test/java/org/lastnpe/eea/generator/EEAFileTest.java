@@ -16,13 +16,13 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Set;
 
+import org.eclipse.jdt.annotation.Nullable;
 import org.junit.jupiter.api.Test;
 import org.lastnpe.eea.generator.EEAFile.SaveOption;
 
 /**
  * @author Sebastian Thomschke (Vegard IT GmbH)
  */
-@SuppressWarnings("null")
 class EEAFileTest {
 
 	public static final class TestEntity {
@@ -32,6 +32,14 @@ class EEAFileTest {
 
 		public TestEntity(final String name) { // CHECKSTYLE:IGNORE RedundantModifier
 			this.name = name;
+		}
+
+		public @Nullable String keepTest1() {
+			return null;
+		}
+
+		public String keepTest2() {
+			return name;
 		}
 	}
 
@@ -102,7 +110,7 @@ class EEAFileTest {
 		final var annotatedSignature = method.annotatedSignature;
 		assert annotatedSignature != null;
 		assertThat(annotatedSignature.value).isEqualTo("L1java/lang/String;");
-		assertThat(method.name.comment).isEqualTo("# a method comment");
+		assertThat(method.name.comment).isEqualTo("# a field comment");
 	}
 
 	@Test
